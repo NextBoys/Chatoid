@@ -6,7 +6,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent implements OnInit, AfterViewInit {
-
+  number: number = 0;
   defaultNavActiveId = 1;
 
   constructor() { }
@@ -31,7 +31,10 @@ export class ChatComponent implements OnInit, AfterViewInit {
 
   save() {
     console.log('passs');
-    
-  }
 
+  }
+  DoSomething() {
+    console.log("message sent");
+    this.number++;
+  }
 }
